@@ -1,0 +1,118 @@
+.h-wrapper {
+  background-color: var(--primary-color);
+  height: 120vh;
+  overflow: hidden;
+}
+
+.h-wrapper .container {
+  padding-top: 8rem;
+}
+.h-container {
+  display: flex;
+  height: 88vh;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.h-arrow {
+  position: absolute;
+  z-index: 0;
+  top: 5rem;
+  width: 100%;
+  max-width: 60rem;
+}
+/* left side */
+.h-left {
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.image-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.person-pill {
+  height: 15rem;
+  width: 6rem;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.person-pill-bg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.person-pill-bg > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 100%;
+}
+
+.image-row > :nth-child(2) {
+  margin-top: -4rem;
+}
+
+/* right side */
+.h-right {
+  flex: 1.25;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.h-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--third-color);
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.h-title > :nth-child(3) {
+  color: white;
+}
+.h-des {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .h-wrapper {
+    height: max-content;
+  }
+  .h-wrapper .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .h-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 3rem;
+  }
+  .h-arrow {
+    display: none;
+  }
+  .h-right {
+    flex: 1;
+    align-items: center;
+  }
+  .h-title {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .h-des {
+    font-size: 1.2rem;
+    width: 80%;
+
+    text-align: center;
+  }
+}
