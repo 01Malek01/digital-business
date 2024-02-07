@@ -1,6 +1,6 @@
 'use client'
 import { ourDiffFeatures } from '@/src/utils/data';
-import './OurDiff.css';
+import './ourDiff.css';
 import { motion } from 'framer-motion';
 import { containerVarianrts, desVariants, tagVariants, titleVariants } from '@/src/utils/animation';
 export default function OurDiff() {
